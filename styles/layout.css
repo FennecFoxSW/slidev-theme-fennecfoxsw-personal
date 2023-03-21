@@ -1,0 +1,120 @@
+:root {
+  --slidev-theme-primary: #fb8c04;
+}
+
+.fennecfoxsw-layout {
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  padding-left: 3.5rem;
+  padding-right: 5.3rem;
+  padding-top: 3.5rem;
+  padding-bottom: 4.8rem;
+  word-break: keep-all;
+
+  h1 + p {
+    @apply -mt-2 opacity-60 mb-4;
+  }
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+
+  h1 {
+    @apply font-black text-4xl mb-4 -ml-[0.05em];
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-sm pt-1 uppercase tracking-widest font-500 -ml-[0.05em];
+  }
+
+  h6:not(.opacity-100) {
+    @apply opacity-40;
+  }
+
+  li {
+    @apply leading-1.8em;
+  }
+
+  blockquote {
+    @apply text-sm px-2 py-1 bg-$prism-background text-$prism-foreground border-$slidev-theme-primary border-l rounded;
+  }
+
+  blockquote > * {
+    @apply my-0;
+  }
+
+  table {
+    @apply w-full;
+  }
+
+  tr {
+    @apply border-b border-gray-400 border-opacity-20;
+  }
+
+  th {
+    @apply text-left font-400;
+  }
+
+  a {
+    @apply border-current border-b border-dashed hover:text-$slidev-theme-primary hover:border-solid;
+  }
+
+  td,
+  th {
+    @apply p-2 py-3;
+  }
+
+  b,
+  strong {
+    @apply font-600;
+  }
+
+  kbd {
+    @apply border border-gray-400 border-b-2 border-opacity-20 rounded;
+    @apply bg-gray-400 bg-opacity-5 py-0.5 px-1 text-xs font-mono;
+  }
+}
+
+.fennecfoxsw-layout.cover {
+  @apply h-full grid;
+
+  h1 {
+    @apply leading-20;
+  }
+}
+
+.fennecfoxsw-layout.content-with-title {
+  @apply h-full;
+
+  h1 + p {
+    @apply -mt-2 mb-4;
+  }
+
+  ul {
+    list-style: disc;
+    li {
+      @apply my-3;
+    }
+  }
+}
