@@ -29,6 +29,9 @@
     "@slidev/cli": "^0.40.3",
     "@types/node": "^18.15.5"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "slidev": {
     "colorSchema": "dark",
     "highlighter": "all",
